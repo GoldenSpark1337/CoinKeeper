@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinKeeper", "CoinKeeper\CoinKeeper.csproj", "{D1E9DD7E-29C5-4D08-BB82-238B13B16556}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinKeeper.API", "CoinKeeper\CoinKeeper.API.csproj", "{D1E9DD7E-29C5-4D08-BB82-238B13B16556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinKeeper.Domain", "Domain\CoinKeeper.Domain.csproj", "{F7C37602-D19B-4CB2-AAB1-2D1F99EE15AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinKeeper.Infrastructure", "Service\CoinKeeper.Infrastructure.csproj", "{60F22962-2CD8-4AB9-89ED-FEA280F3B73D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinKeeper.Application", "Application\CoinKeeper.Application.csproj", "{B13D3F6B-19A6-4373-94AF-D9C95DEEEC5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{D1E9DD7E-29C5-4D08-BB82-238B13B16556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1E9DD7E-29C5-4D08-BB82-238B13B16556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1E9DD7E-29C5-4D08-BB82-238B13B16556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C37602-D19B-4CB2-AAB1-2D1F99EE15AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C37602-D19B-4CB2-AAB1-2D1F99EE15AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C37602-D19B-4CB2-AAB1-2D1F99EE15AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C37602-D19B-4CB2-AAB1-2D1F99EE15AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F22962-2CD8-4AB9-89ED-FEA280F3B73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F22962-2CD8-4AB9-89ED-FEA280F3B73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F22962-2CD8-4AB9-89ED-FEA280F3B73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F22962-2CD8-4AB9-89ED-FEA280F3B73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B13D3F6B-19A6-4373-94AF-D9C95DEEEC5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13D3F6B-19A6-4373-94AF-D9C95DEEEC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13D3F6B-19A6-4373-94AF-D9C95DEEEC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13D3F6B-19A6-4373-94AF-D9C95DEEEC5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,7 +12,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoinKeeper
+using CoinKeeper.Application.Data;
+using Microsoft.EntityFrameworkCore;
+
+namespace CoinKeeper.API
 {
     public class Startup
     {
@@ -28,6 +31,10 @@ namespace CoinKeeper
         {
 
             services.AddControllers();
+            services.AddDbContext<CoinKeeperContext>(opt =>
+            {
+                opt.UseNpgsql(Configuration.GetConnectionString("Postgresql"));
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CoinKeeper", Version = "v1" });
@@ -48,6 +55,7 @@ namespace CoinKeeper
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
